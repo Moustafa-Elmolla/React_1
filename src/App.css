@@ -1,0 +1,238 @@
+body {
+  font-family: 'Lato', sans-serif !important;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* NAVBAR */
+#logo {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.navbar {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  transition: all 0.3s;
+}
+.nav_edit {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nav_edit .navbar-nav li a {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.nav_edit .navbar-nav li .active{
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav_edit .navbar-nav li a.nav-link:hover {
+  color: #1abc9c;
+}
+.back_color {
+  background-color: #2c3e50 !important;
+}
+/* HOME */
+header {
+  background-color: #1abc9c;
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+header p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+header img {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+header h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+}
+/* PORTFOILO */
+#portfolio {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+#portfolio .card_layout {
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  cursor: pointer;
+}
+#portfolio .card:hover .card_layout {
+  opacity: 1;
+}
+#portfolio .card_layout i {
+  color: white;
+  font-size: 6rem;
+}
+#portfolio h2 {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.star_custom {
+  margin: 1.25rem 0 1.5rem;
+}
+.star_custom .line_left {
+  background-color: #fff;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+.star_custom .line_right {
+  background-color: #fff;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+.star_custom .line_left_p {
+  background-color: black;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+.star_custom .line_right_p {
+  background-color: black;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+.portfoilo_item {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  margin-top: 3rem;
+  
+}
+.portfoilo_item .item {
+  width: 80%;
+  margin: auto;
+
+}
+.portfoilo_item .item_cont {
+  background-color: #fff;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  width: 100%;
+}
+.portfoilo_item .item_cont .icon_x {
+  right: 25px;
+  color: #1abc9c;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* ABOUT */
+#about {
+  background-color: #1abc9c;
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+#about .info {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+/* CONTACT */
+#contact {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+#contact h2 {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+#contact input {
+  font-size: 1.5rem;
+  box-shadow: none;
+  padding-bottom: 30px;
+}
+#contact .btn_send {
+  margin-top: 5rem;
+}
+#contact .btn_xl {
+  padding: 1rem 1.75rem;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  font-size: 1.25rem;
+  color: white;
+}
+/* FOOTER */
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+}
+footer h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+footer p {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+footer .icon_cont {
+  border: 3px solid white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+footer .icon_cont:hover  {
+  background-color: white;
+  color: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
